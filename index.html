@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ramees Roshan | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      display: flex;
+      min-height: 100vh;
+      background: #ecf0f1;
+      color: #10181f;
+    }
+
+    .sidebar {
+      background-color: #023a71;
+      color: white;
+      width: 300px;
+      padding: 30px 20px;
+      text-align: center;
+      animation: slideInLeft 1s ease-out;
+    }
+
+    .sidebar img {
+      width: 150px;
+      height: 150px;
+      border-radius: 0;
+      border: 3px solid white;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .sidebar img:hover {
+      transform: scale(1.1);
+    }
+
+    .sidebar h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .sidebar p {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .main {
+      flex: 1;
+      padding: 40px;
+      animation: fadeIn 1s ease-in;
+    }
+
+    section {
+      margin-bottom: 30px;
+      animation: slideUp 0.8s ease-out forwards;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    section:nth-child(1) { animation-delay: 0.4s; }
+    section:nth-child(2) { animation-delay: 0.6s; }
+    section:nth-child(3) { animation-delay: 0.8s; }
+    section:nth-child(4) { animation-delay: 1s; }
+
+    h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #2980b9;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #1abc9c;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #7f8c8d;
+    }
+
+    @keyframes slideInLeft {
+      from {
+        transform: translateX(-100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        padding: 20px;
+      }
+
+      .main {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <img src="ramees1.jpg" alt="Profile Picture">
+    <h1>Ramees Roshan Mohamed</h1>
+    <p>Full Stack Developer<br>AI Enthusiast</p>
+  </div>
+
+  <div class="main">
+    <section>
+      <h2>About Me</h2>
+      <p>
+  I'm Ramees Roshan, a passionate developer with a background in Computer Science. I build full stack applications using Django, React, and more. I'm also curious about AI and love experimenting with tools that combine machine learning and software development. I'm always eager to learn, build, and grow.
+</p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <p>
+    ✅ Programming: Python, C (Basics), Java (Basics), PHP<br>
+    ✅ Web Development: HTML, CSS, JavaScript, Laravel<br>
+    ✅ Frameworks: Django, Laravel (beginner level)<br>
+    ✅ Tools: Git & GitHub, VS Code<br>
+    ✅ Database: MySQL<br>
+    ✅ Other: React (learning), AI/ML basics, Debugging, Team Projects
+  </p>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li><a href="https://github.com/yourname/blog-app" target="_blank">📝 Blog App (Django)</a></li>
+        <li><a href="https://github.com/yourname/ai-summarizer" target="_blank">🤖 AI Summarizer</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Email: Rameesroshanpk@gmail.com</p>
+      <p>
+        <a href="https://github.com/yourname" target="_blank">GitHub</a> |
+        <a href="https://linkedin.com/in/yourname" target="_blank">LinkedIn</a>
+      </p>
+    </section>
+
+    <footer>
+      © 2025 Ramees Roshan. All rights reserved.
+    </footer>
+  </div>
+
+</body>
+</html>
